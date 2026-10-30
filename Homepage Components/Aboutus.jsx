@@ -58,7 +58,7 @@ const stats = [
     { target: 98, suffix: '%', label: 'Customer Satisfaction' },
     { target: 40, suffix: '%', label: 'Faster Installation' },
     { target: 1500, suffix: '+', label: 'Projects Delivered' },
-    { target: 15, suffix: '+', label: 'Years of Experience' },
+    { target: 9, suffix: '+', label: 'Years of Experience' },
 ];
 
 /* ──────────────────────────────────────────
