@@ -16,7 +16,7 @@ const banners = [
         alt: 'RB Earthing Solutions – Safety runs on grounding, grounding runs on trust',
     },
     {
-        src: '/Untitled design.png',
+        src: '/bannerone.png',
         alt: 'Expert earthing installation – Precision-engineered electrodes for every application',
     },
     {
