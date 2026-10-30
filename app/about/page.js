@@ -100,7 +100,7 @@ function FadeIn({ children, className = '', delay = 0 }) {
 
 const stats = [
     { target: 1500, suffix: '+', label: 'Projects Delivered', icon: Building2 },
-    { target: 15, suffix: '+', label: 'Years of Experience', icon: Award },
+    { target: 9, suffix: '+', label: 'Years of Experience', icon: Award },
     { target: 98, suffix: '%', label: 'Client Satisfaction', icon: Users },
     { target: 40, suffix: '%', label: 'Faster Installation', icon: Zap },
 ];
@@ -166,7 +166,7 @@ export default function AboutPage() {
                             Building Trust from the <span className="text-[#00a2e8]">Ground Up</span>
                         </h1>
                         <p className="mt-4 text-white/80 text-sm sm:text-base max-w-lg leading-relaxed">
-                            For over 15 years, we have been India&apos;s trusted partner in electrical earthing, grounding, and lightning protection — engineering safety you can rely on.
+                            For over 9 years, we have been India&apos;s trusted partner in electrical earthing, grounding, and lightning protection — engineering safety you can rely on.
                         </p>
                     </FadeIn>
                 </div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
                         <FadeIn>
                             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                                 <Image
-                                    src="/hero-banner-2.jpg"
+                                    src="/Sunrise.png"
                                     alt="RB Earthing installation"
                                     fill
                                     sizes="(min-width:1024px) 50vw, 100vw"
@@ -189,7 +189,7 @@ export default function AboutPage() {
                                 {/* Accent corner */}
                                 <div className="absolute bottom-0 left-0 w-28 h-28 bg-[#00a2e8]/10 backdrop-blur-sm rounded-tr-[40px]" />
                                 <div className="absolute bottom-4 left-4 bg-white/95 backdrop-blur rounded-xl px-4 py-3 shadow-lg">
-                                    <span className="block text-2xl font-extrabold text-[#00a2e8] tabular-nums">15+</span>
+                                    <span className="block text-2xl font-extrabold text-[#00a2e8] tabular-nums">9+</span>
                                     <span className="text-[11px] font-medium text-slate-500 uppercase tracking-wider">Years of Trust</span>
                                 </div>
                             </div>
@@ -205,10 +205,10 @@ export default function AboutPage() {
                                     A Legacy of Safety &amp; Precision in Electrical Earthing
                                 </h2>
                                 <p className="mt-5 text-slate-500 text-sm sm:text-base leading-relaxed">
-                                    RB Earthing is a trusted provider of advanced electrical grounding and safety solutions based in Ahmedabad, India. We specialize in high-performance earthing electrodes, chemical earthing systems, lightning arresters, and comprehensive electrical safety audits for residential, commercial, industrial, and solar projects.
+                                    RB Earthing began its journey in 2017 with a vision to provide reliable earthing and electrical safety solutions. Over the years, the company has focused on expanding its product portfolio, strengthening customer relationships and serving the evolving requirements of the electrical, industrial and infrastructure sectors.
                                 </p>
                                 <p className="mt-4 text-slate-500 text-sm sm:text-base leading-relaxed">
-                                    Our team of experienced engineers and technicians ensures every installation meets the highest standards of safety, durability, and performance — so you can have absolute confidence in your electrical infrastructure.
+                                    Today, RB Earthing Private Limited continues its journey with a commitment to product quality, customer satisfaction and dependable electrical safety solutions.
                                 </p>
 
                                 {/* Strength chips */}
@@ -308,7 +308,7 @@ export default function AboutPage() {
                                         { icon: Shield, title: 'Certified Quality', desc: 'ISO-certified products and installation processes.' },
                                         { icon: Lightbulb, title: 'Innovation-Led', desc: 'Cutting-edge electrode technology for optimal performance.' },
                                         { icon: Globe, title: 'Pan-India Reach', desc: 'Serving clients across all major cities and states.' },
-                                        { icon: Award, title: 'Expert Team', desc: 'Skilled engineers with 15+ years of field expertise.' },
+                                        { icon: Award, title: 'Expert Team', desc: 'Skilled engineers with 9+ years of field expertise.' },
                                     ].map((item, i) => (
                                         <div
                                             key={i}
@@ -331,7 +331,7 @@ export default function AboutPage() {
                         <FadeIn delay={150}>
                             <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                                 <Image
-                                    src="/hero-banner-4.jpg"
+                                    src="/Equipment.png"
                                     alt="RB Earthing project"
                                     fill
                                     sizes="(min-width:1024px) 50vw, 100vw"

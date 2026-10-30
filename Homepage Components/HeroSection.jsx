@@ -11,26 +11,27 @@ import 'swiper/css/pagination';
 
 const banners = [
     {
-        src: '/hero-banner-1.jpg',
+        src: '/Banner-2.png',
+
         alt: 'RB Earthing Solutions – Safety runs on grounding, grounding runs on trust',
     },
     {
-        src: '/hero-banner-2.jpg',
+        src: '/Untitled design.png',
         alt: 'Expert earthing installation – Precision-engineered electrodes for every application',
     },
     {
-        src: '/hero-banner-3.jpg',
+        src: '/Banner-3.png',
         alt: 'Lightning protection – Shielding your world from nature\'s fury',
     },
     {
-        src: '/hero-banner-4.jpg',
+        src: '/Banner-4.png',
         alt: 'Trusted by industry leaders – End-to-end earthing solutions backed by expertise',
     },
 ];
 
 const HeroSection = () => {
     return (
-        <section id="hero" className="relative w-full lg:h-[80vh]">
+        <section id="hero" className="relative w-full lg:h-[75vh]">
             <Swiper
                 modules={[Autoplay, Pagination]}
                 autoplay={{
@@ -121,7 +122,7 @@ const HeroSection = () => {
 
                 @media (min-width: 1024px) {
                     .hero-swiper {
-                        height: 100%;
+                        height: 75vh;
                     }
 
                     .hero-swiper .swiper-slide {

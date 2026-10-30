@@ -18,13 +18,13 @@ const navigation = {
 const contactInfo = [
     {
         icon: Phone,
-        text: '+91-9888858922',
-        href: 'tel:+91XXXXXXXXXX',
+        text: '+91-9140073153',
+        href: 'tel:+91-9140073153',
     },
     {
         icon: Mail,
-        text: 'info@rbearthing.com',
-        href: 'mailto:info@rbearthing.com',
+        text: 'rbearthingcompany@gmail.com',
+        href: 'mailto:rbearthingcompany@gmail.com',
     },
     {
         icon: MapPin,
@@ -46,7 +46,7 @@ export default function Footer() {
                     <div className="sm:col-span-2 lg:col-span-1">
                         <Link href="/" className="inline-flex items-center gap-2.5 mb-4">
                             <Image
-                                src="/logo-1.png"
+                                src="/white-logo.png"
                                 alt="RB Earthing Logo"
                                 width={48}
                                 height={48}

@@ -10,14 +10,14 @@ const contactDetails = [
     {
         icon: Phone,
         label: 'Phone',
-        value: '+91-XXXXXXXXXX',
-        href: 'tel:+91XXXXXXXXXX',
+        value: '+91-91400-73153',
+        href: 'tel:+91-9140073153',
     },
     {
         icon: Mail,
         label: 'Email',
-        value: 'info@rbearthing.com',
-        href: 'mailto:info@rbearthing.com',
+        value: 'rbearthingcompany@gmail.com',
+        href: 'mailto:rbearthingcompany@gmail.com',
     },
     {
         icon: MapPin,
@@ -31,8 +31,9 @@ const Homepage = () => {
     return (
         <div>
             <HeroSection />
-            <Aboutus />
             <ProductSection />
+            <Aboutus />
+
 
             {/* ───── Contact / Quote Section ───── */}
             <section id="contact" className="py-16 md:py-24 bg-white">

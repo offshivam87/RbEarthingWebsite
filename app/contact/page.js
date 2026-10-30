@@ -11,15 +11,15 @@ const contactInfo = [
     {
         icon: Phone,
         label: "Phone",
-        value: "+91-XXXXXXXXXX",
-        href: "tel:+91XXXXXXXXXX",
+        value: "+919140073153",
+        href: "tel:+919140073153",
         color: "from-blue-500 to-cyan-400",
     },
     {
         icon: Mail,
         label: "Email",
-        value: "info@rbearthing.com",
-        href: "mailto:info@rbearthing.com",
+        value: "rbearthingcompany@gmail.com",
+        href: "mailto:rbearthingcompany@gmail.com",
         color: "from-violet-500 to-purple-400",
     },
     {
@@ -190,7 +190,7 @@ export default function ContactPage() {
                             <ul className="space-y-4">
                                 {[
                                     "ISO certified earthing solutions",
-                                    "15+ years of industry experience",
+                                    "9+ years of industry experience",
                                     "Pan-India installation services",
                                     "Competitive pricing & free site survey",
                                 ].map((item) => (

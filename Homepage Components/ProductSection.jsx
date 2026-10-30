@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, ShieldCheck, Zap, Award } from 'lucide-react';
+import Marquee from '@/components/Marquee';
 
 const trendingProducts = [
     {
@@ -11,46 +12,46 @@ const trendingProducts = [
         name: 'Copper Bonded Chemical Electrode',
         category: 'Grounding Rods',
         badge: 'Best Seller',
-        description: 'High-tensile steel core with 250+ micron molecularly bonded copper for superior fault dissipation.',
-        specs: ['250+ Micron Copper', 'Maintenance Free', 'UL / IEC Certified'],
-        image: '/products/copper-bonded-electrode.jpg',
-        href: '/products/copper-bonded-electrode',
+        description: 'Built with high-tensile steel and molecularly bonded to 99.9% pure electrolytic copper, the CB-04 Earth Rod delivers deep-soil driveability, corrosion resistance, and low ground resistance without cracking or peeling.',
+        specs: ['99.9% Electrolytic Copper', 'Low Carbon Steel Core', 'Variable Coating Thickness'],
+        image: '/copper-bonded-earthing-electrode.jpg',
+        href: '/products/copper-bonded-earthing-electrode',
     },
     {
         id: 2,
-        name: 'Early Streamer ESE Lightning Arrester',
+        name: 'ESE Lightning Arrester',
         category: 'Surge & Lightning Protection',
         badge: 'Trending',
-        description: 'Advanced early streamer emission technology offering up to 107m radius of total facility protection.',
-        specs: ['107m Protection Radius', 'Stainless Steel 316L', 'NFC 17-102 Compliant'],
-        image: '/products/lightning-arrester.jpg',
-        href: '/products/lightning-arrester',
+        description: 'Early Streamer Emission lightning arresters providing advanced protection with extended coverage radius',
+        specs: ['107m Protection Radius', 'Stainless Steel 316L', 'No external power supply required'],
+        image: '/ese-lightning-arrester.png',
+        href: '/products/ese-lightning-arrester',
     },
     {
         id: 3,
-        name: 'Carbon Grounding Backfill Compound',
+        name: 'Backfill Compound',
         category: 'Chemical Earthing',
         badge: 'Eco Safe',
-        description: 'Specially formulated mineral carbon mix that maintains soil moisture and minimizes earth resistance.',
-        specs: ['Resistivity < 0.2 Ω-m', 'Non-Leaching Mineral', '25 kg Moisture Pack'],
-        image: '/products/backfill-compound.jpg',
-        href: '/products/backfill-compound',
+        description: 'The Earth Enhancement Backfill Compound (CB-08) is formulated to condition the soil around grounding electrodes',
+        specs: ['Moisture Retention', 'Current Leakage Prevention', 'Stable Earth Resistance'],
+        image: '/back-fill-compound.png',
+        href: '/products/back-fill-compound',
     },
     {
         id: 4,
-        name: 'Electrolytic Copper Earthing Strip & Plate',
+        name: 'GI Earthing Electrode',
         category: 'Conductors & Hardware',
         badge: 'High Conductivity',
-        description: '99.9% pure electrical grade copper tape and perforated plates for heavy industrial grounding busbars.',
-        specs: ['99.9% Pure Copper', 'High Corrosion Resistance', 'IS 3043 Standard'],
-        image: '/products/copper-strip-plate.jpg',
-        href: '/products/copper-strip-plate',
+        description: 'The GI Earthing Electrode (GI-01) features a Pipe-in-Strip design engineered for reliable grounding',
+        specs: ['Hot-Dip Galvanized', 'Fast Current Dissipation', 'Low Maintenance & Quick Setup'],
+        image: '/gi-earthing-electrode.png',
+        href: '/products/gi-earthing-electrode',
     },
 ];
 
 const ProductSection = () => {
     return (
-        <section id="products" className="py-16 md:py-24 bg-slate-50/70">
+        <section id="products" className="py-16 md:py-24 ">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
@@ -76,17 +77,17 @@ const ProductSection = () => {
                             className="group flex flex-col bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-xs hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300"
                         >
                             {/* Image Container */}
-                            <div className="relative w-full aspect-square bg-slate-100 overflow-hidden">
+                            <div className="relative w-full h-64 sm:h-72 bg-gradient-to-b from-slate-50 to-slate-100/70 p-4 flex items-center justify-center overflow-hidden">
                                 <Image
                                     src={product.image}
                                     alt={product.name}
                                     fill
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="object-contain p-2 group-hover:scale-105 transition-transform duration-500"
                                 />
 
                                 {/* Badge */}
-                                <div className="absolute top-3 left-3">
+                                <div className="absolute top-3 left-3 z-10">
                                     <span className="inline-block text-[11px] font-semibold tracking-wide uppercase px-2.5 py-1 rounded-full bg-white/95 text-slate-800 shadow-sm backdrop-blur-xs border border-slate-100">
                                         {product.badge}
                                     </span>
@@ -141,6 +142,7 @@ const ProductSection = () => {
                     </Link>
                 </div>
             </div>
+            <Marquee text="ISO 9001:2015, CPRI & NABL, CE Marking, RoHS Compliant" />
         </section>
     );
 };
