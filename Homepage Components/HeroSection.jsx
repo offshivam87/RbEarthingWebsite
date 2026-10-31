@@ -32,6 +32,9 @@ const banners = [
 const HeroSection = () => {
     return (
         <section id="hero" className="relative w-full lg:h-[75vh]">
+            <h1 className="sr-only">
+                RB Earthing Company | Leading Earthing Electrode &amp; Lightning Protection Manufacturer in Ludhiana, Punjab
+            </h1>
             <Swiper
                 modules={[Autoplay, Pagination]}
                 autoplay={{

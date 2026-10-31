@@ -9,10 +9,37 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+
 export const metadata = {
-  title: "RB Earthing Pvt.Ltd",
-  description: "ISO Certified Earthing Solutions",
+  metadataBase: new URL("https://rbearthing.com"),
+
+  title: {
+    default:
+      "RB Earthing Company | Earthing Electrode Manufacturer & Supplier",
+    template: "%s | RB Earthing Company",
+  },
+
+  description:
+    "RB Earthing Company offers quality earthing electrodes, copper bonded rods, chemical earthing systems and lightning protection solutions for industrial and commercial applications across India.",
+
+  openGraph: {
+    title:
+      "RB Earthing Company | Electrical Earthing Solutions",
+    description:
+      "Explore reliable earthing electrodes, chemical earthing and lightning protection products from RB Earthing Company.",
+    url: "https://rbearthing.com",
+    siteName: "RB Earthing Company",
+    locale: "en_IN",
+    type: "website",
+    images: ["/og-image.jpg"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
+
 
 export default function RootLayout({ children }) {
   return (
